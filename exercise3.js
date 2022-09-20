@@ -3,7 +3,7 @@ fetch("https://jsonplaceholder.typicode.com/todos")
 .then(json => {
    const uncompleted = json.filter(data => data.completed == false).map(data => {
     return {
-        userId:1,
+        userId:`${data.userId}`,
         title:`${data.title}`
     }
    })
