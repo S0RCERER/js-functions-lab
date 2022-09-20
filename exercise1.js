@@ -1,4 +1,4 @@
-  fetch("https://jsonplaceholder.typicode.com/todos")
+fetch("https://jsonplaceholder.typicode.com/todos")
   .then(response => response.json())
   .then(json => {
      const completed = json.filter(data => data.completed == true);
